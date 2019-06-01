@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>国内_在线模拟黑客攻击网站_第十二网-怕冷爱上雪</title>
+<meta name="Keywords" content="第十二网,第12网,十二网,黑客网页,黑客进攻,模拟,网站源码,学习资料,12影视">
+<meta name="description" content="像电影里黑客高手一样敲代码攻击入侵网站！屌到爆的装逼神器 ！高仿geektyper.com，国内服务器速度快中文英文都有">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="../ASSETS/style.css">
+<link rel="stylesheet" type="text/css" href="../ASSETS/windows.css">
+<script type='text/javascript' src='../ASSETS/jquery.min.js'></script>
+<link rel="stylesheet" type="text/css" href="../ASSETS/spectrum.css">
+<script type='text/javascript' src="../ASSETS/spectrum.js"></script>
+<meta name="viewport" content="width=320" />
+
+
+
+<script src='../ASSETS/jquery.mousewheel.min.js' type='text/javascript'></script> 
+<script src='../ASSETS/script.js' type='text/javascript'></script> 
+<script type='text/javascript'>
+getKernel = localStorage.getItem('kernelZ') || '../ASSETS/kernels/0.txt';
+Typer.file = (getKernel);
+Typer.init();
+</script>
+
+
+
+<script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+$('.clickMe').toggle(function() {
+    $(this).parent().find("div:eq(0)").slideDown("fast");
+	localStorage.setItem("bottombar", "block");
+}, function() {
+    $(this).parent().find("div:eq(0)").slideUp("fast");
+	localStorage.setItem("createthemetip", "none");
+	$("#createthemetip").hide();
+	
+
+	$("#createthemetip").hide();
+});
+});//]]> 
+
+
+
+
+</script>
+	
+<script type='text/javascript'>
+
+
+var dragContainer = $("body");
+var currentDragData = {
+    offset: {x:0, y:0},
+    target: null
+};
+
+$(document).ready(function(e) {
+    $(document).delegate(".dragme", "mousedown", function(e) {
+        if(!currentDragData.target) {
+            if($(e.currentTarget).hasClass("dragme") && !$(e.target).closest(".folder").length) {
+                currentDragData.target = $(e.currentTarget);
+                currentDragData.target.parent().append(currentDragData.target);
+                currentDragData.offset.x = e.pageX - currentDragData.target.offset().left;//e.offsetX;
+                currentDragData.offset.y = e.pageY - currentDragData.target.offset().top;//e.offsetY;
+            }
+        }
+    });
+	
+    $(document).delegate(".dragme #close", "mouseup", function(e) {
+		$(e.currentTarget).closest(".dragme").hide();
+
+    });
+	/*
+	$(document).delegate(".dragme .folder", "mouseup", function(e) {
+
+		currentDragData.target = null;
+
+	});*/
+	
+    $(document).delegate(".dragme", "mouseup", function(e) {
+        if(currentDragData.target) {
+            currentDragData.target = null;		
+        }	
+    });
+    
+    $(document).mousemove(function(e) {
+        if(currentDragData.target) {
+            e.preventDefault();
+            currentDragData.target.offset({
+                left: e.pageX - currentDragData.offset.x,
+                top: e.pageY - currentDragData.offset.y
+            });
+        }
+    });
+});
+
+function showDraggable(d) {
+	$(d).toggle();
+	$(d).parent().append($(d));
+}
+</script>
+
+
+</head>
+<body onload="startTime()">
+
+
+<img class="clickMe" src="../ASSETS/img/gear.png" style="position:fixed;bottom:12px;right:12px;" />  
+
+<!-- Settings Bottombar -->
+
+<div id="bottombar" class="clickEvent show" style="z-index:9999;">
+  
+  
+<div  class="segment" style="width:100px;">
+
+  <script>
+var autoTypingInterval;
+function ToggleAutoTyping() {
+if(!autoTypingInterval) {
+autoTypingInterval = setInterval(function(){
+Typer.addText(12);
+}, 60);document.getElementById("mod").innerHTML = "STOP";
+} else {clearInterval(autoTypingInterval);autoTypingInterval = false;document.getElementById("mod").innerHTML = "AUTO";}
+}
+</script>
+<button type="button" id="mod" onclick="ToggleAutoTyping();">AUTO</button>
+<br>
+
+<sup>背景颜色</sup><br>
+<input style="background:#ff0;" class="basic"/>
+<br>
+<br>
+<sup>字体颜色</sup><br>
+<input type='text' class="basic2"/>
+
+</div>
+<div  class="segment" style="width:250px;">
+
+		<div class="bgsection" onclick='localStorage.setItem("textureZ", "../ASSETS/textures/0.png");$("body").css("background-image", "url(../ASSETS/textures/0.png)");'>默认</div>
+		<div class="bgsection" onclick='localStorage.setItem("textureZ", "../ASSETS/textures/4.png");$("body").css("background-image", "url(../ASSETS/textures/4.png)");'>深度</div>
+		<div class="bgsection" onclick='localStorage.setItem("textureZ", "../ASSETS/textures/1.png");$("body").css("background-image", "url(../ASSETS/textures/1.png)");'>黑图</div>
+		<div class="bgsection" onclick='localStorage.setItem("textureZ", "../ASSETS/textures/2.png");$("body").css("background-image", "url(../ASSETS/textures/2.png)");'>白图</div>
+		<div class="bgsection" onclick='localStorage.setItem("textureZ", "../ASSETS/textures/3.png");$("body").css("background-image", "url(../ASSETS/textures/3.png)");'>条形</div>
+		<div class="bgsection" onclick='localStorage.setItem("textureZ", "../ASSETS/textures/bluebg.jpg");$("body").css("background-image", "url(../ASSETS/textures/bluebg.jpg)");'>黑客</div>
+		<div class="bgsection" onclick='localStorage.setItem("textureZ", "../ASSETS/textures/cmb.jpg");$("body").css("background-image", "url(../ASSETS/textures/cmb.jpg)");'>数字</div>
+		<div class="bgsection" onclick='localStorage.setItem("textureZ", "../ASSETS/textures/fallout.jpg");$("body").css("background-image", "url(../ASSETS/textures/fallout.jpg)");'>灰色</div>
+		<div class="bgsection" onclick='localStorage.setItem("textureZ", "../ASSETS/hknbwj/AnZfZ3n.gif");$("body").css("background-image", "url(../ASSETS/hknbwj/AnZfZ3n.gif)");'>3DX</div>
+	<button  id="upfile" onclick="$('#files').trigger('click');" style="margin-top:2px;cursor:pointer" >Custom BG</button>
+<input type="file" id="files" name="files[]" style="display:none;"/>
+<output id="list" style="opacity:0;width:1px;height:1px;display:none;"></output> 
+
+</div>
+<div class="segment" id="stuff" style="width:250px;">		
+		
+
+<div class="msection" onclick='document.getElementById("Downloading").style.display = "block";setTimeout(function(){ document.getElementById("Downloading").style.display = "none"; }, 4000);'>dln</div>
+<div class="msection" onclick='document.getElementById("Initializing").style.display = "block";setTimeout(function(){ document.getElementById("Initializing").style.display = "none"; }, 5000);'>int</div>
+<div class="msection" onclick='document.getElementById("Scan").style.display = "block";setTimeout(function(){ document.getElementById("Scan").style.display = "none"; }, 10000);'>scn</div>
+<div class="msection" onclick='document.getElementById("Poke").style.display = "block";'>nuk</div>
+<div class="msection" onclick='document.getElementById("Map").style.display = "block";setTimeout(function(){ }, 4000);'>map</div>
+<div class="msection" onclick='document.getElementById("Help").style.display = "block";setTimeout(function(){ document.getElementById("Downloading").style.display = "none"; }, 4000);'>hlp</div>
+<div class="msection" onclick='document.getElementById("Breach").style.display = "block";setTimeout(function(){ document.getElementById("Downloading").style.display = "none"; }, 4000);'>brc</div>
+<div class="msection" onclick='document.getElementById("Hash").style.display = "block";setTimeout(function(){ document.getElementById("Downloading").style.display = "none"; }, 4000);'>has</div>
+<div class="msection" onclick='document.getElementById("Query").style.display = "block";setTimeout(function(){ document.getElementById("Query").style.display = "none"; }, 6000);'>qry</div>
+<div class="msection" onclick='document.getElementById("Console").style.display = "block";setTimeout(function(){ document.getElementById("Downloading").style.display = "none"; }, 4000);'>con</div>
+<div class="msection" onclick='document.getElementById("Deploy").style.display = "block";setTimeout(function(){ document.getElementById("Deploy").style.display = "none"; }, 2000);'>dep</div>
+<div class="msection" onclick='document.getElementById("Irc").style.display = "block";setTimeout(function(){ document.getElementById("Irc").style.display = "none"; }, 4000);'>irc</div>
+<div class="msection" onclick='document.getElementById("Tracing").style.display = "block";setTimeout(function(){ document.getElementById("Downloading").style.display = "none"; }, 4000);'>tra</div>
+<div class="msection" onclick='document.getElementById("Neurotoxin").style.display = "block";setTimeout(function(){ document.getElementById("Neurotoxin").style.display = "none"; }, 4000);'>ntx</div>
+<div class="msection" onclick='document.getElementById("Rat").style.display = "block";setTimeout(function(){ document.getElementById("Rat").style.display = "none"; }, 10000);'>rat</div>
+
+
+</div>
+<div class="segment" style="width:150px;">		
+		
+
+<div class="msection" onclick='document.getElementById("Audio").style.display = "block";setTimeout(function(){ document.getElementById("Downloading").style.display = "none"; }, 4000);'>音</div>
+<div class="msection" onclick='document.getElementById("Sequence").style.display = "block";setTimeout(function(){ document.getElementById("Initializing").style.display = "none"; }, 5000);'>生</div>
+<div class="msection" onclick='document.getElementById("Stability").style.display = "block";setTimeout(function(){ document.getElementById("Scan").style.display = "none"; }, 10000);'>稳</div>
+<div class="msection" onclick='document.getElementById("Random").style.display = "block";'>随</div>
+<div class="msection" onclick='document.getElementById("Pipe").style.display = "block";setTimeout(function(){ document.getElementById("Downloading").style.display = "none"; }, 4000);'>指</div>
+<div class="msection" onclick='document.getElementById("Flash").style.display = "block";setTimeout(function(){ document.getElementById("Downloading").style.display = "none"; }, 4000);'>破</div>
+
+<div class="msection" style="width:50px;height:20px;margin-top:10px;" onclick='document.getElementById("CustomWindow").style.display = "block";'>自定义</div>
+<a onclick="Prompt()"style="font-size:10px;padding-top:20px;    vertical-align: middle;
+    line-height: 50px;">&nbsp;&nbsp;EDIT</a>
+
+<script>
+function Prompt() {
+
+bigtitleP = localStorage.getItem("bigtitle") || 'My Window Title';
+smalltitleP = localStorage.getItem("smalltitle") || 'Enter small window Title (can leave blank)';
+customimageP = localStorage.getItem("customimage") || '../ASSETS/img/placeholder.png';
+
+
+    var bigtitle = prompt("输入大窗口标题", bigtitleP);
+	localStorage.setItem("bigtitle", bigtitle);
+    var smalltitle = prompt("输入小窗口标题（可以留空）)", smalltitleP);
+	localStorage.setItem("smalltitle", smalltitle);
+	var customimage = prompt("输入图像URL以显示", customimageP);
+	localStorage.setItem("customimage", customimage);
+	
+
+document.getElementById("bigtitle").innerHTML = bigtitle;
+document.getElementById("smalltitle").innerHTML = smalltitle;
+document.getElementById("customimage").src = customimage;
+}
+</script>
+</div>
+<div class="segment" style="width:100px;">
+<pre>代码风格：
+<a onclick="localStorage.setItem('kernelZ', '../ASSETS/kernels/0.txt');location.reload();">Default</a>
+<a onclick="localStorage.setItem('kernelZ', '../ASSETS/kernels/3.txt');location.reload();">Python</a>
+<a onclick="localStorage.setItem('kernelZ', '../ASSETS/kernels/2.txt');location.reload();">C++</a>
+<a onclick="localStorage.setItem('kernelZ', '../ASSETS/kernels/1.txt');location.reload();">ASP.net</a>
+<a onclick="localStorage.setItem('kernelZ', '../ASSETS/kernels/4.txt');location.reload();">Nmap</a>
+<a  id="upfile1" onclick="$('#files3').trigger('click');" style="margin-top:10px;cursor:pointer" ><b><br>自定义文本</b></a>
+<input type="file" id="files3" name="files3[]" style="display:none"  />
+
+</pre>
+
+</div>
+<div class="segment" style="width:300px;">
+
+				<div class="logosection" id="blanklogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/1.png");$("#center").css("background-image", "url(../ASSETS/logos/.png)");'>NO</div>
+				<div class="logosection" id="tegniologo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/tegnio.png");$("#center").css("background-image", "url(../ASSETS/logos/tegnio.png)");'>TG</div>
+				<div class="logosection" id="scplogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/scp.png");$("#center").css("background-image", "url(../ASSETS/logos/scp.png)");'>SC</div>
+				<div class="logosection" id="biologo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/bio.png");$("#center").css("background-image", "url(../ASSETS/logos/bio.png)");'>BI</div>
+				<div class="logosection" id="blackmesalogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/blackmesa.png");$("#center").css("background-image", "url(../ASSETS/logos/blackmesa.png)");'>BM</div>
+				<div class="logosection" id="halologo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/halo.png");$("#center").css("background-image", "url(../ASSETS/logos/halo.png)");'>HL</div>
+				<div class="logosection" id="dharmalogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/dharma.png");$("#center").css("background-image", "url(../ASSETS/logos/dharma.png)");'>DH</div>
+				<div class="logosection" id="aperturelogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/aperture.png");$("#center").css("background-image", "url(../ASSETS/logos/aperture.png)");'>AP</div>
+				<div class="logosection" id="noidealogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/omnicorp.png");$("#center").css("background-image", "url(../ASSETS/logos/omnicorp.png)");'>OC</div>
+				<div class="logosection" id="umbrellalogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/umbrella.png");$("#center").css("background-image", "url(../ASSETS/logos/umbrella.png)");'>UM</div>
+				<div class="logosection" id="cyberdynelogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/cyberdyne.png");$("#center").css("background-image", "url(../ASSETS/logos/cyberdyne.png)");'>CY</div>
+				<div class="logosection" id="rdalogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/rda.png");$("#center").css("background-image", "url(../ASSETS/logos/rda.png)");'>RD</div>
+				<div class="logosection" id="weylandlogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/weyland.png");$("#center").css("background-image", "url(../ASSETS/logos/weyland.png)");'>WL</div>
+				<div class="logosection" id="slivlogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/sliv.png");$("#center").css("background-image", "url(../ASSETS/logos/sliv.png)");'>SL</div>
+				<div class="logosection" id="tegnioredlogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/delorean.png");$("#center").css("background-image", "url(../ASSETS/logos/delorean.png)");'>DL</div>
+				<div class="logosection" id="ponylogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/pony.png");$("#center").css("background-image", "url(../ASSETS/logos/pony.png)");'>PN</div>
+				<div class="logosection" id="shieldlogo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/shield.png");$("#center").css("background-image", "url(../ASSETS/logos/shield.png)");'>SH</div>
+				<div class="logosection" id="abstergologo" onclick='localStorage.setItem("logotype", "../ASSETS/logos/dread.gif");$("#center").css("background-image", "url(../ASSETS/logos/dread.gif)");'>DR</div>
+
+				
+	<button  id="upfile1" onclick="$('#files2').trigger('click');" style="margin-top:2px;cursor:pointer" >自定义 Logo</button>
+	
+				
+<input type="file" id="files2" name="files2[]" style="display:none"  />
+<output id="list2" style="opacity:0;width:10px;height:10px;"></output>
+
+
+</div>
+<img onclick='$("#bottombar").hide();localStorage.setItem("bottombar", "none");$("#createthemetip").hide();localStorage.setItem("createthemetip", "none");' src="../ASSETS/img/close.png" style="float:right;margin-right:5px;margin-top:3px;" />
+<div class="segment">
+<table style="width:100%">
+  <tr>
+    <td><input type="checkbox" id="stat" />  对讲机</td>
+    <td><input type="checkbox" id="stat2" /> 文件夹显示</td>		
+  </tr>
+  <tr>
+    <td>字体大小</td>
+    <td><input id="slider1" type="range" min="4" max="50" value="15" /></td>		
+  </tr>
+  <tr>
+    <td>输入速度</td>
+    <td><input id="slider2" type="range" min="1" max="50" value="5" /></td>		
+  </tr>
+</table>
+
+
+<script>
+
+    setStatus = document.getElementById('stat');
+    setStatus.onclick = function() {
+        if(document.getElementById('stat').checked) {
+            localStorage.setItem('stat', "true");
+			localStorage.setItem('soundsetting', "mi6");
+			welcome.play();
+			
+        } else {
+		localStorage.setItem('stat', "false");
+            localStorage.setItem('soundsetting', "0");
+        }
+    }
+
+
+getStstus = localStorage.getItem('stat');
+    if (getStstus == "true") {
+        document.getElementById("stat").checked = true;
+    } else {
+        console.log("its not checked");
+		document.getElementById("stat").checked = false;
+    }
+	
+	</script>
+
+
+
+	<script>
+
+    setStatus2 = document.getElementById('stat2');
+    setStatus2.onclick = function() {
+        if(document.getElementById('stat2').checked) {
+            localStorage.setItem('stat2', "false");
+			localStorage.setItem('folders', "block");
+			$("#folders").css("display", "block");
+			
+        } else {
+		localStorage.setItem('stat2', "true");
+		localStorage.setItem('folders', "none");
+            $("#folders").css("display", "none");
+        }
+    }
+
+
+getStstus = localStorage.getItem('stat2');
+    if (getStstus == "true") {
+        document.getElementById("stat2").checked = true;
+    } else {
+        console.log("its not checked");
+		document.getElementById("stat2").checked = false;
+    }
+	
+	</script>
+
+	
+	
+
+
+<select>
+    <option selected="selected">选择字体</option>
+    <option>Arial</option>
+	<option>Hacker1</option>
+	<option>Hacker2</option>
+	<option>Matrix</option>
+	<option>Fixedsys</option>
+	<option>Arial Black</option>
+    <option>Tahoma</option>
+    <option>Consolas</option>
+    <option>Verdana</option>
+	<option>Wingdings</option>
+	<option>Impact</option>
+</select>
+
+
+  <script>
+function EnableSound() {			localStorage.setItem('soundsetting', "mi6");
+			welcome.play(); localStorage.setItem("typingsound", "../ASSETS/voice/mi6/keyboard1.mp3");}
+function DisableSound() {localStorage.setItem('soundsetting', "0");localStorage.setItem("typingsound", "1");}
+
+</script>
+&nbsp;声音&nbsp;<button type="button" id="mod" onclick="EnableSound();">开</button><button type="button" id="mod" onclick="DisableSound();">关</button>
+
+</div>
+<div class="segment" style="float:right;">
+<img src="../ASSETS/hknbwj/0QL6FFv.gif" onclick="document.getElementById('Numbers').style.display = 'block';" style="margin-left:20px;width:150px;float:right;" />
+<div style="color:#fff;float:right;">
+<h1 id="txt" style="font-size:37px;margin:30px 0 0 0;padding:0;"></h1>
+<h2 style="font-size:16px;margin:0;padding:0;">第十二网-安全工作站</h2>
+</div>
+</div>
+
+
+</div>
+
+<div id='AccessGranted' class="dialog" style="display:none;"><h1>允许访问</h1></div>
+<div id='AccessDenied'  class="dialog"  ondragstart='return false;' style="display:none;"><h1>拒绝访问</h1></div>
+<div id='LevelRequired'   class="dialog" ondragstart='return false;' style="display:none;"><h1>安全漏洞</h1><h2>三级反问权限</h2></div>
+<div id='Downloading'  ondragstart='return false;' class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1>正在下载…</h1>对方关键数据<br><img src='../ASSETS/img/downloading.gif'></div>
+<div id='Rat'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/img/rat.gif'></div>
+<div id='Initializing'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1>加密</h1><img src='../ASSETS/hknbwj/PTHgj1N.gif'></div>
+<div id='Scan'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1>卫星上传</h1>接口通过北斗卫星<img src='../ASSETS/hknbwj/nhk5its.gif'></div>
+<div id='Map' class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1>IP定位追踪</h1><img src='../ASSETS/hknbwj/vOxo92o.gif'></div>
+<div id='Countdown' class="dragme" ondragstart='return false;' style="display:none;"><h1>净化设备</h1>清除将开始：<br><br><br><img src='../ASSETS/img/countdown.gif'><br><br></div>
+<div id='Password' class="dragme" ondragstart='return false;' style="display:none;"><h1>净化设施？</h1>确认密码<br><img src='../ASSETS/img/password.gif'></div>
+<div id='Poke'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1>项目siop-62</h1>核武器计划<img src='../ASSETS/hknbwj/Ec2Z2eb.gif'></div>
+<div id='Hash'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1>密码解密</h1>计算哈希值<br><img src='../ASSETS/img/hash.gif'></div>
+<div id='Pony'  class="dragme" ondragstart='return false;' style="display:none;"><img src='../ASSETS/hknbwj/yb7MK0i.gif'></div>
+<div id='SystemFailure'  class="dragme" ondragstart='return false;' style="display:none;"></div>
+<div id='ConnectionLost'  class="dragme" ondragstart='return false;' style="display:none;">连接丢失<h2>设备 离线</h2></div>
+<div id='Breach'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1>安全警报</h1>室内外生违约<img src='../ASSETS/img/breach.gif'></div>
+<div id='Evacuate'  class="dragme" ondragstart='return false;' style="display:none;"><img  style="background:none;" id="close" src="../ASSETS/img/close1.png"/><h1>设施破坏</h1>临界EXOGEN违约<img src='../ASSETS/img/evacuate.gif'></div>
+<div id='Query'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/>国际刑警组织的数据库<img src='../ASSETS/hknbwj/WZYdsTD.gif'></div>
+<div id='Console'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/>编制结<br><br><img src='../ASSETS/hknbwj/msmvE09.gif'></div>
+<div id='Deploy'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1>激活的鹰</h1>与所有敌人车辆交战<img src='../ASSETS/hknbwj/snY9WtD.gif'></div>
+<div id='Numbers'  ondragstart='return false;' style="display:none;"><img src='../ASSETS/hknbwj/id2kyxB.gif'></div>
+<div id='Radar'  ondragstart='return false;' onclick='$(&quot;#Radar&quot;).toggle();' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/img/radar.gif'></div>
+<div id='Irc'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/img/irc.gif'></div>
+<div id='Tracing'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/hknbwj/NnVSoQT.gif'></div>
+<div id='Neurotoxin'  class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1>溢流装置</h1>制备Neurotoxin Emiters<br><br><img src='../ASSETS/hknbwj/eHaZXmm.gif'></div>
+<div id='Audio' class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/>语音记录<br><img src='../ASSETS/img/audio.gif'><img src='../ASSETS/img/audio.gif'><img src='../ASSETS/img/controls.png'></div>
+<div id='Flash' class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/hknbwj/Bua5h62.gif'></div>
+<div id='Sequence' class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/hknbwj/LlseBPd.gif'></div>
+<div id='Pipe' class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/img/pipe.gif'></div>
+<div id='Stability' class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/img/stability.gif'></div>
+<div id='Random' class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/hknbwj/XJsjXT1.gif'></div>
+<div id='BigFolder'  class="dragme" ondragstart='return false;' style="display:none;">
+<img id="close" src="../ASSETS/img/close1.png"/>
+
+<h2> /root/bash/scripts</h2>
+
+<div class="folder" onclick='showDraggable("#Downloading");'><p>DL 数据</p></div>
+<div class="folder" onclick='showDraggable("#Hash");'><p>哈希解密</p></div>
+<div class="folder"  onclick='showDraggable("#Console");'><p>数据终端</p></div>
+<div class="folder"  onclick='showDraggable("#Initializing");'><p>B解密器</p></div>
+<div class="folder"  onclick='showDraggable("#Map");'><p>卫星地图</div>
+<div class="folder" onclick='showDraggable("#Scan");'><p>全球扫描</p></div>
+<div class="folder" onclick='showDraggable("#Query");'><p>A数据库</p></div>
+<div class="folder"  onclick='showDraggable("#Deploy");'><p>部署系统</p></div>
+<div class="folder"  onclick='showDraggable("#Irc");'><p>通信系统</p></div>
+<div class="folder"  onclick='showDraggable("#Tracing");'><p>定位追踪</p></div>
+<div class="folder" onclick='showDraggable("#Neurotoxin");'><p>神经毒素</p></div>
+<div class="folder" onclick='showDraggable("#Rat");'><p>病毒感染</p></div>
+<div class="folder"  onclick='showDraggable("#AccessDenied");document.getElementById("accessdenied").play();'><p>权限获取</p></div>
+<div class="folder"  onclick='showDraggable("#Poke");'><p>导航系统</p></div>
+<div class="folder"  onclick='showDraggable("#Sequence");'><p>生化结构</p></div>
+<div class="folder"  onclick='showDraggable("#Random");'><p>随机指令</p></div>
+<div class="folder"  onclick='showDraggable("#Stability");'><p>稳定性</p></div>
+<div class="folder"  onclick='showDraggable("#Pipe");'><p>指令频率</p></div>
+<div class="folder"  onclick='showDraggable("#Audio");'><p>音频加密</p></div>
+</div>
+
+
+<div id='Help'  class="dragme" ondragstart='return false;' style="display:none;">
+<img id="close" src="../ASSETS/img/close1.png"/><img src='../ASSETS/img/hints.png'>
+<hr />
+<p>Stats & Achievements</p>
+<div id="LetterCount"></div><br>
+<div id="getAchievement1" class="ac"></div>
+<div id="getAchievement2" class="ac"></div>
+<div id="getAchievement3" class="ac"></div>
+<div id="getAchievement4" class="ac"></div>
+<div id="getAchievement5" class="ac"></div>
+<div id="getAchievement6" class="ac"></div>
+<div id="getAchievement7" class="ac"></div>
+<div id="getAchievement8" class="ac"></div>
+<div id="getAchievement9" class="ac"></div>
+
+</div>
+
+
+<div id='CustomWindow' class="dragme" ondragstart='return false;' style="display:none;"><img id="close" src="../ASSETS/img/close1.png"/><h1 id="bigtitle"></h1><p id="smalltitle"></p><img id="customimage" src=''>
+<script>
+bigtitle = localStorage.getItem("bigtitle") || 'Click Edit to set the title';
+smalltitle = localStorage.getItem("smalltitle") || 'Click Edit to set the title';
+customimage = localStorage.getItem("customimage") || '../ASSETS/img/placeholder.png';
+document.getElementById("bigtitle").innerHTML = bigtitle;
+document.getElementById("smalltitle").innerHTML = smalltitle;
+document.getElementById("customimage").src = customimage;
+</script>
+</div>
+
+
+
+
+<script>
+
+
+
+</script>
+
+
+
+<!--
+	<div class="box" id="box">
+	<img id="icon" src="" />
+	<h1></h1>
+	<p id="achievementname"></p>
+	</div>
+
+	-->
+
+<div id="center">
+</div>
+<div id="dragme">
+<div id='console'>
+
+<div id="txt"></div>
+SCP_Secure_Systems_v3.2654.2 <br/></br>WARNING: LEVEL 4 Authorisation Needed</br>Press F2 or TAB for help, or type to begin. <br>Press the &#9776; icon on the bottom for settings.</div>
+</div>
+
+<div id="folders">
+<div class="folder" onclick='showDraggable("#Downloading");'><p>DL 数据</p></div>
+<div class="folder"  onclick='showDraggable("#Console");'><p>数据终端</p></div>
+<div class="folder"  onclick='showDraggable("#Hash");'><p>解密系统</p></div>
+<div class="folder" onclick='$("#section").toggle();'><p>设置菜单</p></div>
+<div class="folder"  onclick='$("#BigFolder").toggle();'><p>所有脚本</p></div>
+
+<div id="result2"></div>
+</div>
+
+<script type='text/javascript'>
+$(document).ready(function() {
+    $('select').change(function() {
+        if($(this).val() == "Default font"){
+            $('#console').css('font-family',"");
+        }else{
+            $('#console').css('font-family',$(this).val());
+			localStorage.setItem("mainfont", $(this).val());
+        }
+
+    }); 
+  
+});
+</script>
+<script type='text/javascript'>
+$(document).ready(function() {
+    $('#slider1').change(function() {
+        if($(this).val() == "Default font"){
+            $('#console').css('font-size',"11");
+        }else{
+            $('#console').css('font-size',$(this).val() + 'px');
+			localStorage.setItem("fontsizeConsole", $(this).val() + 'px');
+        }
+
+    }); 
+  
+});
+</script>
+<script type='text/javascript'>
+$(document).ready(function() {
+    $('#slider2').change(function() {
+        if($(this).val() == "Default font"){
+            $('#console').css('font-size',"11");
+        }else{
+            Typer.speed = $(this).val();
+        }
+    }); 
+  
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#section").hide();
+	$("#Help").hide();
+  });
+  $("#show").click(function(){
+    $("#section").show();
+	$("#Help").show();
+  });
+});
+</script>
+
+
+
+<img src="new.png" id="createthemetip" style="right:40px;bottom:45px;position:absolute;width:380px;">
+
+<script src='../ASSETS/sounds.js'></script>
+<script src='../ASSETS/keyboard.js'></script>
+<script src='../ASSETS/localstorage.js'></script>
+<script src='../ASSETS/upload.js'></script>
+
+<audio loop id="caution">
+<source src="../ASSETS/voice/mi6/caution.mp3" type="audio/wav" />
+</audio>
+
+<audio loop id="purge">
+<source src="../ASSETS/voice/mi6/purge.mp3" type="audio/wav" />
+</audio>
+
+
+<script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?d39cb0fe4afad48ac311d98ed5b4793f";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>
+</body>
+</html>
+
+<!--*(c) Copyright 2011 Simone Masiero. Some Rights Reserved. *This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License-->

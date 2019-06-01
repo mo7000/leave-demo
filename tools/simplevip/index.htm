@@ -1,0 +1,122 @@
+<!--
+地址前半截：
+http://yun.zihu.tv/yunparse/?url=
+http://www.wmxz.wang/video.php?url=
+http://2.jx.72du.com/video.php?url=
+http://www.vipjiexi.com/yun.php?url=
+http://api.cloudparse.com/?url=
+http://yyygwz.com/index.php?url=
+http://000o.cc/jx/ty.php?url=
+http://5qiyi.sdyhy.cn/5qiyi/5qiyi1.php?url=
+http://5qiyi.sdyhy.cn/5qiyi/5qiyi2.php?url=
+http://api.47ks.com/webcloud/?v=
+http://jx.71ki.com/?url=
+http://yun.mt2t.com/yun?url=
+http://api.mp4la.net/?url=
+http://jx.haokan5.net/ty/tong.php?url=
+http://jx.haokan5.net/jx/?url=
+http://player.gakui.top/?url=
+http://qtzr.net/s/?qt=
+
+*http://v.72du.com/api/?url=
+*http://www.yydy8.com/Common/?url=
+*http://www.200919.com/jiexi/vip.php?url=
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>VIP视频在线观看</title>
+</head>
+<body style="text-align:center;" onload="javascript:txtIn.focus();">
+
+<noscript>你的浏览器不支持JavaScript!</noscript>
+<p>&nbsp;</p>
+
+<p>
+视频地址：
+<input id="txtIn" type="text" size="50" title="在这里输入或粘贴在线视频地址，如下：
+http://www.iqiyi.com/v_19rr9geo78.html
+http://v.youku.com/v_show/id_XMTc3ODg3MzM0NA==.html
+http://www.tudou.com/albumplay/5dQ-iJuSUDw/mK5Bt144A9I.html
+https://v.qq.com/x/cover/g7jpq0qd0k8xdca/e0022eneefz.html
+http://film.sohu.com/album/9199740.html
+http://www.le.com/ptv/vplay/26879025.html
+http://www.mgtv.com/v/3/8849/f/307467.html
+http://ddp.vip.pptv.com/vod_detail/bxD3dNxCsvBT0Tk.html
+......" />
+<a href="javascript:void(0);" title="清空文本" style="text-decoration: none; color:#696;" onclick="javascript:txtIn.value='';txtIn.focus();">清空</a>
+<select id="lefturl">
+<option value="http://yun.zihu.tv/yunparse/?url=" selected>zihu</option>
+<option value="http://www.wmxz.wang/video.php?url=">wmxz</option>
+<option value="http://2.jx.72du.com/video.php?url=">72du</option>
+<option value="http://www.vipjiexi.com/yun.php?url=">vipjiexi</option>
+<option value="http://api.cloudparse.com/?url=">cloudparse</option>
+<option value="http://yyygwz.com/index.php?url=">yyygwz</option>
+<option value="http://000o.cc/jx/ty.php?url=">000o</option>
+<option value="http://5qiyi.sdyhy.cn/5qiyi/5qiyi1.php?url=">sdyhy(1)</option>
+<option value="http://5qiyi.sdyhy.cn/5qiyi/5qiyi2.php?url=">sdyhy(2)</option>
+<option value="http://api.47ks.com/webcloud/?v=">47ks</option>
+<option value="http://jx.71ki.com/?url=">71ki</option>
+<option value="http://yun.mt2t.com/yun?url=">mt2t</option>
+<option value="http://api.mp4la.net/?url=">mp4la</option>
+<option value="http://jx.haokan5.net/ty/tong.php?url=">haokan5(ty)</option>
+<option value="http://jx.haokan5.net/jx/?url=">haokan5(jx)</option>
+<option value="http://player.gakui.top/?url=">gakui</option>
+<option value="http://qtzr.net/s/?qt=">qtzr</option>
+</select>
+<input type="button" value="VIP解析" onclick="javascript:doPlayVIP();txtIn.select();txtIn.focus();" />
+</p>
+
+<p>
+【zihu】爱奇艺、优酷、土豆、腾讯、搜狐、乐视、芒果、PPTV<br />
+【wmxz】爱奇艺、优酷、土豆、腾讯、搜狐、乐视、芒果、PPTV<br />
+【72du】爱奇艺、优酷、土豆、腾讯、搜狐、乐视、芒果、PPTV<br />
+【vipjiexi】爱奇艺、优酷、土豆、腾讯、搜狐、乐视、芒果、PPTV<br />
+【cloudparse】爱奇艺、优酷、土豆、腾讯、搜狐、乐视、芒果、PPTV<br />
+【yyygwz】爱奇艺、优酷、土豆、搜狐、乐视、芒果、PPTV<br />
+【000o】爱奇艺、优酷、土豆、搜狐、乐视、芒果、PPTV<br />
+【sdyhy(1)】爱奇艺、优酷、土豆、搜狐、乐视、芒果、PPTV<br />
+【sdyhy(2)】爱奇艺、优酷、土豆、搜狐、乐视、芒果、PPTV<br />
+【47ks】爱奇艺、优酷、搜狐、乐视、芒果、PPTV<br />
+【71ki】爱奇艺、优酷、搜狐、乐视、芒果<br />
+【mt2t】爱奇艺、腾讯、搜狐、乐视、芒果<br />
+【mp4la】爱奇艺、搜狐、乐视、芒果、PPTV<br />
+【haokan5(ty)】优酷、土豆、乐视、芒果、PPTV<br />
+【haokan5(jx)】爱奇艺、优酷、乐视、芒果<br />
+【gakui】爱奇艺、芒果<br />
+【qtzr】搜狐、乐视<br />
+</p>
+
+<p>&nbsp;</p>
+
+<script type="text/javascript">
+<!--
+function doPlayVIP() {
+  var strIn,theurl;
+  var iPos=0;
+  strIn = decodeURIComponent(txtIn.value);
+  if ( strIn.length<1 ) {
+    alert("【错误提示】\n\n    内容为空，请在文本框内输入或粘贴视频地址！\n\n");
+    return;
+  };
+  iPos = strIn.indexOf(".html");
+  if ( iPos>0 ) {
+    txtIn.value = strIn.substr(0,iPos+5);
+  } else {
+    iPos = strIn.indexOf(".shtml");
+    if ( iPos>0 && strIn.indexOf(".sohu.com")>0 ) {
+      txtIn.value = strIn.substr(0,iPos+6);
+    };
+  };
+  theurl = lefturl.value + txtIn.value;
+  window.open(theurl);
+};
+// -->
+</script>
+
+</body>
+</html>
+<!--
+original:
+aHR0cDovL3d3dy41MnBvamllLmNuL2hvbWUucGhwP21vZD1zcGFjZSZ1aWQ9NDc2NDExJmRvPXRocmVhZCZ2aWV3PW1lJmZyb209c3BhY2UKICBodHRwOi8vd3d3LjUycG9qaWUuY24vdGhyZWFkLTU2NTQ1Mi0xLTEuaHRtbAogICAgaHR0cDovL3Bhbi5iYWlkdS5jb20vcy8xaHM0dmRCSSDlr4bnoIHvvJowajJqCmh0dHA6Ly93d3cuNTJwb2ppZS5jbi90aHJlYWQtNTY1MjQ1LTEtMS5odG1sClFR576k77yaNTY4NTgwMjcwCg
+-->
