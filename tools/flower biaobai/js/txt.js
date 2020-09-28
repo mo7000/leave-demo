@@ -1,7 +1,7 @@
 BLUR = false;
 
 PULSATION = true;
-PULSATION_PERIOD = 1000;
+PULSATION_PERIOD = 1500;
 PARTICLE_RADIUS = 3;
 
 /* disable blur before using blink */
@@ -27,7 +27,7 @@ BLENDING = true;
 /* if empty the text will be a random number */
 var TEXT;
 num = 0;
-TEXTArray = ["有你","在我","身边","真好","而我","还未","遇到","你啊"];
+TEXTArray = ["有你","在我","身边","真好","永远","爱你","?"];
 
 QUALITY_TO_FONT_SIZE = [5, 12, 30, 45, 200, 350];
 QUALITY_TO_SCALE = [20, 6, 4, 1, 0.9, 1.5];
