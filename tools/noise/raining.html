@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>The jungle breath</title>
+		<meta name="description" content="Jungle rain generator for relaxing or studying">
+        <meta name="keywords" content="jungle noise, jungle rain, sound generator">
+		<meta name="robots" content="index, follow">
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="The jungle breath">
+<meta property="og:description" content="Jungle rain generator for relaxing or studying">
+
+<!-- Favicons -->
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-96x96.png" sizes="96x96" type="image/png">
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-192x192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" sizes="57x57" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/apple-touch-icon-180x180.png">
+			
+	<!-- Resources: reset.css + style.css + jquery-ui.css + stretchy.css + simple-slider.css + toggle.css + ns-style-growl.css -->
+	
+	<link rel="stylesheet" href="storm/style.css">
+	<link rel="stylesheet" href="hipsound/style2.css">
+	
+<style>
+body {
+  background-color: #335A51;
+}
+
+.cd-main-content {
+  background: #335A51 url("img/rain.jpg") fixed no-repeat center center;
+  background-size: cover;
+}
+
+header {
+  background: #437368;
+  background: -webkit-linear-gradient(to right, #437368, #203B35);
+  background: linear-gradient(to right, #437368, #203B35);
+  border-bottom-color: #5A736D;  
+}
+
+#cd-menu-trigger {
+  border-left-color: #5A736D;
+}
+
+#cd-top-nav a {
+  color: #8EABA4;
+}
+
+</style>	
+
+<script src="hipsound/js/modernizr.js" ></script> <!-- Modernizr -->
+  
+
+<!-- jPlayer -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.1/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jplayer@2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Best rain",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/rainbest160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_1",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+
+	
+	$("#jquery_jplayer_2").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Thunder",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/thunder160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_2",
+		useStateClassSkin: true,
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+
+
+	
+
+	$("#jquery_jplayer_3").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Splashing rainfall",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/splashing-rainfall160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_3",
+		useStateClassSkin: true,
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+
+	
+	$("#jquery_jplayer_4").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Heavy rain roof",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/heavy-rain-roof160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_4",
+		useStateClassSkin: true,
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+
+	
+	
+	$("#jquery_jplayer_5").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Jungle",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/defonicprem/jungle160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_5",
+		useStateClassSkin: true,
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+	
+	
+	$("#jquery_jplayer_6").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Rain constant",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/rain-constant160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_6",
+		useStateClassSkin: true,
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+
+	
+	
+	$("#jquery_jplayer_7").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Window Raindrops",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/raindrops160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_7",
+		useStateClassSkin: true,
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+
+
+
+	$("#jquery_jplayer_8").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Wind gale",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/gale160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_8",
+		useStateClassSkin: true,
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+
+	
+	$("#jquery_jplayer_9").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Rainy walk",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/rainy-walk160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_9",
+		useStateClassSkin: true,
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+	
+});
+//]]>
+</script>
+
+<!-- Analitics -->
+<script src="https://plausible.io/js/plausible.js"></script>
+
+
+
+</head>
+
+
+<body>
+<!-- jpplayer begins -->
+<div id="jquery_jplayer_1" class="jp-jplayer jp-jplayer1"></div>
+<div id="jquery_jplayer_2" class="jp-jplayer jp-jplayer2"></div>
+<div id="jquery_jplayer_3" class="jp-jplayer jp-jplayer3"></div>
+<div id="jquery_jplayer_4" class="jp-jplayer jp-jplayer4"></div>
+<div id="jquery_jplayer_5" class="jp-jplayer jp-jplayer5"></div>
+<div id="jquery_jplayer_6" class="jp-jplayer jp-jplayer6"></div>
+<div id="jquery_jplayer_7" class="jp-jplayer jp-jplayer7"></div>
+<div id="jquery_jplayer_8" class="jp-jplayer jp-jplayer8"></div>
+<div id="jquery_jplayer_9" class="jp-jplayer jp-jplayer9"></div>
+
+ 
+
+
+
+
+
+
+	<header class="lateral-menu-is-open">
+		<img src="https://g2k7z4f8.ssl.hwcdn.net/img/logo-sound.png"  id="cd-logo" alt="">
+		
+		<nav id="cd-top-nav">
+			<!-- <ul>
+				<li><a href="https://gumroad.com/l/thevibes" target="_blank">Software</a></li>
+			</ul> -->
+		</nav>
+		<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text"> &nbsp; SFX</span><span class="cd-menu-icon"></span></a>
+	</header>
+	
+	<main class="cd-main-content lateral-menu-is-open">
+		<!-- put your content here -->
+		
+  <div id="corp" class="thunder">
+  <canvas id="canvas1"></canvas>
+  <canvas id="canvas2"></canvas>
+  <canvas id="canvas3"></canvas>
+  </div>	
+									
+<div class="player" style="z-index: 990;">
+	    <img class="rond" src="img/rond.svg"  alt="">
+		<div class="song">
+			<div class="artist">Stay on track</div>
+			<div class="name" id="titr">The jungle breath. Respire ...</div>
+			<div id="titr1"><span class="kkcountdown1" data-seconds="3600"></span></div>
+			<div id="titr2"><span class="kkcountdown2" data-seconds="1800"></span></div>
+		</div>
+		<div class="playarea">
+			<a href="vibeasmrion.html"  title="Previous vibe"><div class="prevSong"></div></a>
+			
+		      <div id="jp_container_1">		
+			        <div class="play2 jp-play" id="shower"></div>
+					<div class="pause2 jp-pause" id="hider"></div>	
+			  </div>
+									
+			<a href="index.html"  title="Next vibe"><div class="nextSong"></div></a>
+		</div>
+		<div class="soundControl3" id="slvolume"><input id="my-input1" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+</div>
+
+	    <!-- Stretchy navigation -->
+		<nav class="cd-stretchy-nav edit-content" style="z-index: 990;">
+			<a class="cd-nav-trigger" href="#0">
+				<span aria-hidden="true"></span>
+			</a>
+			<ul>
+				<li><a href="javascript:;" id="stop_all"><span>mute&nbsp;in&nbsp;1&nbsp;hour</span></a></li>				
+				<li><a href="javascript:;" id="stop_all2"><span>mute&nbsp;in&nbsp;30&nbsp;min.</span></a></li>
+				<li><a href="javascript:;" id="stoper"><span>mute&nbsp;now</span></a></li>
+			</ul>
+			<span aria-hidden="true" class="stretchy-nav-bg"></span>
+		</nav>
+
+				
+		<br><br>				
+        <div class="foot" style="z-index: 990;">
+		</div>		
+
+	</main> <!-- cd-main-content -->
+
+	<nav id="cd-lateral-nav" class="lateral-menu-is-open">
+
+		<ul class="cd-navigation cd-single-item-wrapper">
+		
+			<li><p class="swit">Additional sounds:</p></li>
+			
+			<li>
+			  <div id="jp_container_2">			
+				<a href="javascript:;" class="nopoint">Thunder <div class="jp-play k-switch" id="shower22"><div class="track color-1"></div><div class="ball green"></div><div class="ball red"></div></div></a>
+				<div class="marginal" id="slvolume2"><input id="my-input2" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		      </div>					  
+			</li>
+						
+			<li>
+			  <div id="jp_container_6">			
+				<a href="javascript:;" class="nopoint">Light rain <div class="jp-play k-switch" id="shower66"><div class="track color-2"></div><div class="ball green"></div><div class="ball red"></div></div></a>
+				<div class="marginal" id="slvolume6"><input id="my-input6" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		      </div>			
+			</li>
+			
+			<li>
+			  <div id="jp_container_5">				
+				<a href="javascript:;" class="nopoint">Jungle wilderness <div class="jp-play k-switch" id="shower55"><div class="track color-5"></div><div class="ball green"></div><div class="ball red"></div></div></a>
+				<div class="marginal" id="slvolume5"><input id="my-input5" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		      </div>
+			</li>	
+						
+			<li>
+			  <div id="jp_container_7">			
+				<a href="javascript:;" class="nopoint">Raindrops hit a window <div class="jp-play k-switch" id="shower77"><div class="track color-3"></div><div class="ball green"></div><div class="ball red"></div></div></a>
+				<div class="marginal" id="slvolume7"><input id="my-input7" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		      </div>
+			</li>
+
+			<li>
+			  <div id="jp_container_3">				
+				<a href="javascript:;" class="nopoint">Splashing rainfall <div class="jp-play k-switch" id="shower33"><div class="track color-4"></div><div class="ball green"></div><div class="ball red"></div></div></a>
+				<div class="marginal" id="slvolume3"><input id="my-input3" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		      </div>			
+			</li>
+			
+			<li>
+			  <div id="jp_container_4">				
+				<a href="javascript:;" class="nopoint">Heavy rain on roof <div class="jp-play k-switch" id="shower44"><div class="track color-6"></div><div class="ball green"></div><div class="ball red"></div></div></a>
+				<div class="marginal" id="slvolume4"><input id="my-input4" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		      </div>	
+			</li>
+			
+			<li>
+			  <div id="jp_container_8">			
+				<a href="javascript:;" class="nopoint">Refreshing wind <div class="jp-play k-switch" id="shower88"><div class="track color-8"></div><div class="ball green"></div><div class="ball red"></div></div></a>
+				<div class="marginal" id="slvolume8"><input id="my-input8" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		      </div>
+			</li>			
+				
+			<li>
+			  <div id="jp_container_9">			
+				<a href="javascript:;" class="nopoint">Rainy walk <div class="jp-play k-switch" id="shower99"><div class="track color-9"></div><div class="ball green"></div><div class="ball red"></div></div></a>
+				<div class="marginal" id="slvolume9"><input id="my-input9" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		      </div>
+			</li>			
+				
+		</ul> <!-- cd-single-item-wrapper -->		
+		
+	</nav>
+
+	
+<!-- Croup of main.js + hide/show sliders + code for new volumes + classie.js + notificationFx.js + toggle.js -->
+<script src="hipsound/js/main.js" ></script>
+<!-- Include Simple Slider JavaScript and CSS -->
+<script src="tim/slider/simple-slider.js" ></script>
+<script src="hipsound/js/kkcountdown.js"  type="text/javascript"></script>
+<!-- stretchy.js + mute code -->
+<script src="tim/js/stretchy.js"  type="text/javascript"></script>
+<script src="storm/index.js" ></script>
+
+		<!-- Notification -->
+
+</body>
+</html>

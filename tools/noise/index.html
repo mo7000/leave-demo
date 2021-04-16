@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="en">
+	  
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="index, follow">
+
+<title>noise generator</title>
+<meta name="description" content="Ambient sounds for use as background noise at home or in the office. Create your own unique sound environment with our noise generator.">
+<meta name="keywords" content="nature sounds, background noise, ambient sounds, rain sound, noise generator">
+
+<!-- <meta name="description" content="Ambient noise generator with a multitude of combinations to block out distractions. Build your unique ambience.">
+
+<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-96x96.png" sizes="96x96" type="image/png">
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-192x192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" sizes="57x57" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/apple-touch-icon-180x180.png">
+
+<!-- OPEN GRAPHS Meta -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Defonic - a fabulous ambient noise generator">
+<meta property="og:description" content="Give you an easy creative boost, stay focused or just relax with one of the multitude of combinations.">
+<meta property="og:site_name" content="Defonic">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+
+<!-- reset.css(from-stretchy) + theme CSS + simple-slider.css + stretchy.css -->
+<link rel="stylesheet" type="text/css" href="defonic/style.css">
+<link rel="stylesheet" href="defonic/menu/style.css">
+		
+<script src="https://g2k7z4f8.ssl.hwcdn.net/tim/js/modernizr.js"></script><!-- Modernizr -->
+
+<!-- jPlayer -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.1/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jplayer@2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Ocean",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/ocean.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_1",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_2").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Birds",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/birds160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_2",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_3").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Wind",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/gale160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_3",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+		
+	$("#jquery_jplayer_4").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Whitenoise",
+				mp3: "https://ambicular.com/sounds/noise/white-noise144.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_4",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+	$("#jquery_jplayer_5").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Library",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/people/delft-library160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_5",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+	$("#jquery_jplayer_6").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Train",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/train160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_6",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+	$("#jquery_jplayer_7").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "River",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/river160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_7",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});	
+	
+	$("#jquery_jplayer_8").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Fire",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/fireplace.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_8",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_9").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Crickets",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/crickets160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_9",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+	$("#jquery_jplayer_10").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Rowing",
+				mp3: "https://ambicular.com/sounds/defonicprem/rowing160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_10",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+				
+	$("#jquery_jplayer_11").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Road",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/highway160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_11",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});	
+	
+	$("#jquery_jplayer_12").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Fan",
+				mp3: "https://ambicular.com/sounds/objects/fan-two160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_12",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});	
+	
+	$("#jquery_jplayer_13").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Rain",
+				mp3: "https://ambicular.com/sounds/rain/rainbest160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_13",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});	
+
+	$("#jquery_jplayer_14").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Thunder",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/thunder160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_14",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_15").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Snow",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/snow.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_15",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_16").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Windchime",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/windchime160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_16",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+	$("#jquery_jplayer_17").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Cafe",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/cafe/cafe-brazil-walla160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_17",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_18").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Jungle",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/defonicprem/jungle160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_18",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_19").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Cat",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/cat160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_19",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_20").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Leaves",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/aspen-tree160.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_20",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+	
+	$("#jquery_jplayer_21").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Pinknoise",
+				mp3: "https://ambicular.com/sounds/noise/pink-noise144.mp3"
+			});
+		},
+		solution: "html",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_21",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+
+});
+
+//]]>
+</script>
+
+
+
+<!-- Hotjar Tracking Code for Defonic.com
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:869947,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script> -->
+
+
+
+
+
+<!-- Facebook Pixel Code
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '219673395347162');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=219673395347162&ev=PageView&noscript=1"
+/></noscript>
+ -->
+
+
+<!-- Analitics -->
+<!-- <script async defer data-domain="defonic.com" src="https://plausible.io/js/plausible.js"></script> -->
+<script async data-apikey="c01dcfa69bd501181e9dc25410411d" data-cookieless src="https://cdn.jsdelivr.net/npm/hockeystack@latest/hockeystack.min.js"></script>
+
+</head>
+
+<body>
+		
+<!-- jpplayer begins -->
+<div id="jquery_jplayer_1" class="jp-jplayer jp-jplayer1"></div>
+<div id="jquery_jplayer_2" class="jp-jplayer jp-jplayer2"></div>
+<div id="jquery_jplayer_3" class="jp-jplayer jp-jplayer3"></div>
+<div id="jquery_jplayer_4" class="jp-jplayer jp-jplayer4"></div>
+<div id="jquery_jplayer_5" class="jp-jplayer jp-jplayer5"></div>
+<div id="jquery_jplayer_6" class="jp-jplayer jp-jplayer6"></div>
+<div id="jquery_jplayer_7" class="jp-jplayer jp-jplayer7"></div>
+<div id="jquery_jplayer_8" class="jp-jplayer jp-jplayer8"></div>
+<div id="jquery_jplayer_9" class="jp-jplayer jp-jplayer9"></div>
+<div id="jquery_jplayer_10" class="jp-jplayer jp-jplayer10"></div>
+<div id="jquery_jplayer_11" class="jp-jplayer jp-jplayer11"></div>
+<div id="jquery_jplayer_12" class="jp-jplayer jp-jplayer12"></div>
+<div id="jquery_jplayer_13" class="jp-jplayer jp-jplayer13"></div>
+<div id="jquery_jplayer_14" class="jp-jplayer jp-jplayer14"></div>
+<div id="jquery_jplayer_15" class="jp-jplayer jp-jplayer15"></div>
+<div id="jquery_jplayer_16" class="jp-jplayer jp-jplayer16"></div>
+<div id="jquery_jplayer_17" class="jp-jplayer jp-jplayer17"></div>
+<div id="jquery_jplayer_18" class="jp-jplayer jp-jplayer18"></div>
+<div id="jquery_jplayer_19" class="jp-jplayer jp-jplayer19"></div>
+<div id="jquery_jplayer_20" class="jp-jplayer jp-jplayer20"></div>
+<div id="jquery_jplayer_21" class="jp-jplayer jp-jplayer21"></div>
+
+<!-- <audio id="bubbles" src="defonic/bubbles.mp3"></audio> -->
+
+<!-- Simple popup
+<div class="cd-popup is-visible" role="alert">
+	<div class="cd-popup-container" style="text-align: center;">
+		<p style="text-align: left;">Defonic Premium for Windows. Now % off with promo code <span style="text-decoration: underline;">---</span> !</p>
+		<a href="audio-software.html" target="_blank"><img src="defonic/images/soft.png" width="190" height="133" style="margin-bottom: -7px;" title="PC software" alt="software"></a>
+		<div class="cd-buttons"></div>
+		<a href="#0" class="cd-popup-close"></a>
+	</div>
+</div>
+<script>
+jQuery(document).ready(function($){	
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	
+});
+</script> -->
+
+
+
+
+
+
+
+
+
+
+<!-- MENU -->
+<div class="table_center">
+      
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="https://g2k7z4f8.ssl.hwcdn.net/defonic/images/city-part1.png" class="citypart1" alt="">
+<img src="https://g2k7z4f8.ssl.hwcdn.net/defonic/images/city-lodki.png" class="citypart2 rotate-90-cw" alt="">
+<img src="https://g2k7z4f8.ssl.hwcdn.net/defonic/images/city-birds.png" class="citypart3 rotate-center" id="birds" alt="">
+<!-- <img src="defonic/images/logo.png" class="logo" alt=""> -->
+
+<div class="countdownbis">
+	<div id="titr1"><span data-seconds="3600" class="kkcountdown1"></span></div>
+	<div id="titr2"><span data-seconds="1800" class="kkcountdown2"></span></div>
+</div>
+
+
+<!-- Brightness and Gamma Switch is created By Joseph Shenton @TeamiHackify -->
+<div class="button-con">
+  <label for="cb1" class="mobhide">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+      <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+    </svg>
+  </label>
+  
+  <input class="toggle" id="cb1" type="checkbox">
+  <label class="toggle-button" for="cb1"></label>
+  
+  <label for="cb1" class="mobhide">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+      <g id="Sun">
+        <g>
+          <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </g>
+      </g>
+    </svg>
+  </label>
+</div>
+
+<!-- Static navbar -->
+  <div class="container" style="display: table;"> 
+     <div class="column1 mobhide">
+       <h2>Create<br>immersive<br>soundscapes<br></h2>
+     </div>
+	 
+     <div class="column2 floating-logo">
+	    <img src="https://g2k7z4f8.ssl.hwcdn.net/defonic/images/baloon-logo.png" width="170" height="250" alt="">
+     </div>		
+  </div>
+  <div class="container" style="margin-top: 20px;">
+	  <ul>
+        <a href="raining.html"><li style="display: inline-block" class="mybtn">raining</li></a>
+		<a href="vibeasmrion.html"><li style="display: inline-block" class="mybtn">vibeasmrion</li></a>
+      </ul>
+  </div>
+
+
+
+<div id="video">
+        <!-- <a href="javascript:;"><i class="fa fa-bell-o fa-fw fa-lg"></i><span class="updates"></span></a> -->	
+	    <!-- Stretchy navigation -->
+		<nav class="cd-stretchy-nav edit-content" onclick="document.getElementById('bubbles').play();">
+			<a class="cd-nav-trigger" href="#0">
+				<span aria-hidden="true"></span>
+			</a>
+			<ul>
+				<li><a href="javascript:;" id="stop_all"><span>mute&nbsp;in&nbsp;1&nbsp;hour</span></a></li>				
+				<li><a href="javascript:;" id="stop_all2"><span>mute&nbsp;in&nbsp;30&nbsp;min.</span></a></li>
+				<li><a href="javascript:;" id="stoperbis"><span>mute&nbsp;now</span></a></li>
+			</ul>
+			<span aria-hidden="true" class="stretchy-nav-bg"></span>
+		</nav>		
+</div>
+
+
+
+
+
+
+
+
+<!-- 1 Home -->
+<section id="home" class="container">
+
+<div id="main">
+
+		<p class="presets">
+		            <span>presets</span>					
+					&nbsp; #<a href="javascript:;" class="p-stop borderLeftRight" id="p-medit"><span>meditation</span></a>
+					&nbsp; #<a href="javascript:;" class="p-stop borderLeftRight" id="p-prod"><span>productivity</span></a>
+					&nbsp; #<a href="javascript:;" class="p-stop borderLeftRight" id="p-relax"><span>relax</span></a>
+					<br>
+					&nbsp; #<a href="javascript:;" class="p-stop borderLeftRight" id="p-sleep"><span>sleep</span></a>
+					&nbsp; #<a href="javascript:;" class="p-stop borderLeftRight" id="p-zen"><span>zen</span></a>
+					&nbsp; #<a href="javascript:;" class="p-stop borderLeftRight" id="p-rainy"><span>refreshing</span></a>
+					&nbsp; #<a href="javascript:;" class="p-stop borderLeftRight" id="p-focus"><span>focus</span></a>		
+		</p>
+
+<!-- Share buttons by Cubecamp.ru  www.cubecamp.ru/articles/share/cubecamp.html -->
+<div id="addbar2" class="share-btn"> 
+	
+	
+	  
+</div>
+
+		
+<div id="content">		        
+  <div class="row">
+		
+	<div class="col-xs-6 col-sm-4">
+        <div id="jp_container_1" class="info">
+				<a href="javascript:;" class="jp-play" id="shower1"><img src="defonic/images/blue/ocean.svg" title="Ocean waves" alt="ocean" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider1"><img src="defonic/images/blue/ocean.svg" title="Ocean waves" alt="ocean image" class="img2"></a>
+				<div class="marginal" id="slvolume1"><input id="my-input1" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>		
+		</div>
+	</div>
+							
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_7" class="info">
+				<a href="javascript:;" class="jp-play" id="shower7"><img src="defonic/images/blue/brook.svg" title="River" alt="river" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider7"><img src="defonic/images/blue/brook.svg" title="River" alt="river image" class="img2"></a>
+				<div class="marginal" id="slvolume7"><input id="my-input7" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		</div>
+	</div>
+							
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_13" class="info">
+				<a href="javascript:;" class="jp-play" id="shower13"><img src="defonic/images/blue/rain.svg" title="Rain" alt="rain" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider13"><img src="defonic/images/blue/rain.svg" title="Rain" alt="rain image" class="img2"></a>
+				<div class="marginal" id="slvolume13"><input id="my-input13" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		</div>
+	</div>
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_2" class="info">
+				<a href="javascript:;" class="jp-play" id="shower2"><img src="defonic/images/blue/forest.svg" title="Forest" alt="forest" class="img1 shadow" onclick="document.getElementById('birds').style.display='inline';"></a>		
+				<a href="javascript:;" class="jp-pause" id="hider2"><img src="defonic/images/blue/forest.svg" title="Forest" alt="forest image" class="img2" onclick="document.getElementById('birds').style.display='none';"></a>
+				<div class="marginal" id="slvolume2"><input id="my-input2" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>						
+		</div>
+	</div>
+							
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_8" class="info">
+				<a href="javascript:;" class="jp-play" id="shower8"><img src="defonic/images/blue/fire.svg" title="Crackling fireplace" alt="fireplace" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider8"><img src="defonic/images/blue/fire.svg" title="Crackling fireplace" alt="fireplace image" class="img2"></a>
+				<div class="marginal" id="slvolume8"><input id="my-input8" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		</div>
+	</div>
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_14" class="info">
+				<a href="javascript:;" class="jp-play" id="shower14"><img src="defonic/images/blue/thunder.svg" title="Thunder" alt="thunder" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider14"><img src="defonic/images/blue/thunder.svg" title="Thunder" alt="thunder image" class="img2"></a>
+				<div class="marginal" id="slvolume14"><input id="my-input14" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		</div>
+	</div>	
+														
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_3" class="info">
+				<a href="javascript:;" class="jp-play" id="shower3"><img src="defonic/images/blue/wind.svg" title="Wind" alt="wind" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider3"><img src="defonic/images/blue/wind.svg" title="Wind" alt="wind image" class="img2"></a>
+				<div class="marginal" id="slvolume3"><input id="my-input3" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>				
+		</div>
+	</div>
+							
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_9" class="info">
+				<a href="javascript:;" class="jp-play" id="shower9"><img src="defonic/images/blue/moon.svg" title="At night" alt="night" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider9"><img src="defonic/images/blue/moon.svg" title="At night" alt="night image" class="img2"></a>
+				<div class="marginal" id="slvolume9"><input id="my-input9" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>		
+		</div>
+	</div>
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_20" class="info">
+				<a href="javascript:;" class="jp-play" id="shower20"><img src="defonic/images/blue/leafs.svg" title="Leaves" alt="leaves" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider20"><img src="defonic/images/blue/leafs.svg" title="Leaves" alt="leaves image" class="img2"></a>
+				<div class="marginal" id="slvolume20"><input id="my-input20" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		</div>
+	</div>
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_16" class="info">
+				<a href="javascript:;" class="jp-play" id="shower16"><img src="defonic/images/blue/bell.svg" title="Wind chime" alt="windchime" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider16"><img src="defonic/images/blue/bell.svg" title="Wind chime" alt="wind chime image" class="img2 wobble-hor-top"></a>
+				<div class="marginal" id="slvolume16"><input id="my-input16" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		</div>
+	</div>
+							
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_15" class="info">
+				<a href="javascript:;" class="jp-play" id="shower15"><img src="defonic/images/blue/snow.svg" title="Snow storm" alt="snow" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider15"><img src="defonic/images/blue/snow.svg" title="Snow storm" alt="snow image" class="img2 flip-diagonal-1-bl"></a>
+				<div class="marginal" id="slvolume15"><input id="my-input15" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>		
+		</div>
+	</div>
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_17" class="info">
+				<a href="javascript:;" class="jp-play" id="shower17"><img src="defonic/images/blue/cafe.svg" title="Caf¨¦" alt="cafe" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider17"><img src="defonic/images/blue/cafe.svg" title="Caf¨¦" alt="cafe image" class="img2 rotate-90-ccw"></a>
+				<div class="marginal" id="slvolume17"><input id="my-input17" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>	
+		</div>
+	</div>
+																							
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_10" class="info">
+				<a href="javascript:;" class="jp-play" id="shower10"><img src="defonic/images/blue/rowing2.svg" title="Rowing" alt="rowing" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider10"><img src="defonic/images/blue/rowing2.svg" title="Rowing" alt="rowing image" class="img2"></a>
+				<div class="marginal" id="slvolume10"><input id="my-input10" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>	
+		</div>
+	</div>
+							
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_12" class="info">	
+				<a href="javascript:;" class="jp-play" id="shower12"><img src="defonic/images/blue/fan.svg" title="Air fan" alt="fan" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider12"><img src="defonic/images/blue/fan.svg" title="Air fan" alt="fan image" class="img2 rotate-center"></a>
+				<div class="marginal" id="slvolume12"><input id="my-input12" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		</div>
+	</div>
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_5" class="info">
+				<a href="javascript:;" class="jp-play" id="shower5"><img src="defonic/images/blue/library.svg" title="Campus library" alt="library" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider5"><img src="defonic/images/blue/library.svg" title="Campus library" alt="book image" class="img2"></a>
+				<div class="marginal" id="slvolume5"><input id="my-input5" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		</div>
+	</div>
+
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_4" class="info">
+				<a href="javascript:;" class="jp-play" id="shower4"><img src="defonic/images/blue/noise.svg" title="White noise" alt="white" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider4"><img src="defonic/images/blue/noise.svg" title="White noise" alt="noise" class="img2"></a>
+				<div class="marginal" id="slvolume4"><input id="my-input4" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+		</div>
+	</div>
+							
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_6" class="info">
+				<a href="javascript:;" class="jp-play" id="shower6"><img src="defonic/images/blue/train.svg" title="Train" alt="train" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider6"><img src="defonic/images/blue/train.svg" title="Train" alt="train image" class="img2"></a>
+				<div class="marginal" id="slvolume6"><input id="my-input6" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>			
+		</div>
+	</div>
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_21" class="info">
+				<a href="javascript:;" class="jp-play" id="shower21"><img src="defonic/images/blue/noise.svg" title="Pink noise" alt="pink" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider21"><img src="defonic/images/blue/noise.svg" title="Pink noise" alt="noise noise" class="img2"></a>
+				<div class="marginal" id="slvolume21"><input id="my-input21" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>	
+		</div>
+	</div>	
+							
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_11" class="info">
+				<a href="javascript:;" class="jp-play" id="shower11"><img src="defonic/images/blue/road.svg" title="Road" alt="road" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider11"><img src="defonic/images/blue/road.svg" title="Road" alt="road image" class="img2"></a>
+				<div class="marginal" id="slvolume11"><input id="my-input11" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>				
+		</div>	
+	</div>
+							
+	<div class="col-xs-6 col-sm-4">
+	    <div id="jp_container_19" class="info">
+				<a href="javascript:;" class="jp-play" id="shower19"><img src="defonic/images/blue/cat.svg" title="Cat's purr" alt="cat" class="img1 shadow"></a>
+				<a href="javascript:;" class="jp-pause" id="hider19"><img src="defonic/images/blue/cat.svg" title="Cat's purr" alt="cat image" class="img2"></a>
+				<div class="marginal" id="slvolume19"><input id="my-input19" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>				
+		</div>
+	</div>
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_18" class="info">
+				<a href="javascript:;" class="jp-play" id="shower18"><img src="defonic/images/blue/jungle.svg" title="Jungle" alt="jungle" class="img1 shadow" onclick="document.getElementById('birds').style.display='inline';"></a>
+				<a href="javascript:;" class="jp-pause" id="hider18"><img src="defonic/images/blue/jungle.svg" title="Jungle" alt="jungle image" class="img2" onclick="document.getElementById('birds').style.display='none';"></a>
+				<div class="marginal" id="slvolume18"><input id="my-input18" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>	
+		</div>
+	</div>	
+	 
+  </div> <!-- /row end -->
+</div> <!-- end content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- deal widget
+<a href="***" target="_blank"><img class="deal" src="images/deal.jpg" alt=""></a> -->
+<!-- <a href="#0"><img src="defonic/images/deal.jpg" class="vrlps-trigger deal" alt="more"></a> -->	 
+<!-- <a href="#0" class="vrlps-trigger roundbtn">more features and sounds</a> -->
+
+
+
+
+				
+</div> <!-- end main -->
+	
+</section> <!--end home -->
+
+<!-- 2 Contact  -->
+<section id="contact" class="container">
+    <div id="main" style="padding-top: 60px; display=none">
+       
+		
+    </div>
+</section>
+
+
+<!-- 3 About -->
+<section id="about" class="container">
+    <div id="main">
+       			
+    </div>
+</section>
+
+				
+	
+<!-- Footer Section -->    
+<footer>				
+	
+</footer>
+
+<!-- Hide-Show slider -->		
+<script>
+$( "#hider1" ).click(function() {
+  $( "#slvolume1" ).css( "visibility", "hidden" );
+});
+$( "#shower1" ).click(function() {
+  $( "#slvolume1" ).css( "visibility", "visible" );
+});
+$( "#hider2" ).click(function() {
+  $( "#slvolume2" ).css( "visibility", "hidden" );
+});
+$( "#shower2" ).click(function() {
+  $( "#slvolume2" ).css( "visibility", "visible" );
+});
+$( "#hider3" ).click(function() {
+  $( "#slvolume3" ).css( "visibility", "hidden" );
+});
+$( "#shower3" ).click(function() {
+  $( "#slvolume3" ).css( "visibility", "visible" );
+});
+$( "#hider4" ).click(function() {
+  $( "#slvolume4" ).css( "visibility", "hidden" );
+});
+$( "#shower4" ).click(function() {
+  $( "#slvolume4" ).css( "visibility", "visible" );
+});
+$( "#hider5" ).click(function() {
+  $( "#slvolume5" ).css( "visibility", "hidden" );
+});
+$( "#shower5" ).click(function() {
+  $( "#slvolume5" ).css( "visibility", "visible" );
+});
+$( "#hider6" ).click(function() {
+  $( "#slvolume6" ).css( "visibility", "hidden" );
+});
+$( "#shower6" ).click(function() {
+  $( "#slvolume6" ).css( "visibility", "visible" );
+});
+$( "#hider7" ).click(function() {
+  $( "#slvolume7" ).css( "visibility", "hidden" );
+});
+$( "#shower7" ).click(function() {
+  $( "#slvolume7" ).css( "visibility", "visible" );
+});
+$( "#hider8" ).click(function() {
+  $( "#slvolume8" ).css( "visibility", "hidden" );
+});
+$( "#shower8" ).click(function() {
+  $( "#slvolume8" ).css( "visibility", "visible" );
+});
+$( "#hider9" ).click(function() {
+  $( "#slvolume9" ).css( "visibility", "hidden" );
+});
+$( "#shower9" ).click(function() {
+  $( "#slvolume9" ).css( "visibility", "visible" );
+});
+$( "#hider10" ).click(function() {
+  $( "#slvolume10" ).css( "visibility", "hidden" );
+});
+$( "#shower10" ).click(function() {
+  $( "#slvolume10" ).css( "visibility", "visible" );
+});
+$( "#hider11" ).click(function() {
+  $( "#slvolume11" ).css( "visibility", "hidden" );
+});
+$( "#shower11" ).click(function() {
+  $( "#slvolume11" ).css( "visibility", "visible" );
+});
+$( "#hider12" ).click(function() {
+  $( "#slvolume12" ).css( "visibility", "hidden" );
+});
+$( "#shower12" ).click(function() {
+  $( "#slvolume12" ).css( "visibility", "visible" );
+});
+$( "#hider13" ).click(function() {
+  $( "#slvolume13" ).css( "visibility", "hidden" );
+});
+$( "#shower13" ).click(function() {
+  $( "#slvolume13" ).css( "visibility", "visible" );
+});
+$( "#hider14" ).click(function() {
+  $( "#slvolume14" ).css( "visibility", "hidden" );
+});
+$( "#shower14" ).click(function() {
+  $( "#slvolume14" ).css( "visibility", "visible" );
+});
+$( "#hider15" ).click(function() {
+  $( "#slvolume15" ).css( "visibility", "hidden" );
+});
+$( "#shower15" ).click(function() {
+  $( "#slvolume15" ).css( "visibility", "visible" );
+});
+$( "#hider16" ).click(function() {
+  $( "#slvolume16" ).css( "visibility", "hidden" );
+});
+$( "#shower16" ).click(function() {
+  $( "#slvolume16" ).css( "visibility", "visible" );
+});
+$( "#hider17" ).click(function() {
+  $( "#slvolume17" ).css( "visibility", "hidden" );
+});
+$( "#shower17" ).click(function() {
+  $( "#slvolume17" ).css( "visibility", "visible" );
+});
+$( "#hider18" ).click(function() {
+  $( "#slvolume18" ).css( "visibility", "hidden" );
+});
+$( "#shower18" ).click(function() {
+  $( "#slvolume18" ).css( "visibility", "visible" );
+});
+$( "#hider19" ).click(function() {
+  $( "#slvolume19" ).css( "visibility", "hidden" );
+});
+$( "#shower19" ).click(function() {
+  $( "#slvolume19" ).css( "visibility", "visible" );
+});
+$( "#hider20" ).click(function() {
+  $( "#slvolume20" ).css( "visibility", "hidden" );
+});
+$( "#shower20" ).click(function() {
+  $( "#slvolume20" ).css( "visibility", "visible" );
+});
+$( "#hider21" ).click(function() {
+  $( "#slvolume21" ).css( "visibility", "hidden" );
+});
+$( "#shower21" ).click(function() {
+  $( "#slvolume21" ).css( "visibility", "visible" );
+});
+</script>
+
+<!-- Brightness and Gamma Switch is created By Joseph Shenton @TeamiHackify -->
+<script type="text/javascript">
+$('body').toggleClass('day-background');
+
+$('#cb1').on('click', function () { $('body').toggleClass('day-background'); });
+</script>
+
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://g2k7z4f8.ssl.hwcdn.net/tim/slider/simple-slider.js"></script>
+
+<script src="https://g2k7z4f8.ssl.hwcdn.net/tim/js/kkcountdown.js" type="text/javascript"></script>
+<!-- stretchy.js + mute code -->
+<script src="https://g2k7z4f8.ssl.hwcdn.net/tim/js/stretchy.js" type="text/javascript"></script>
+<!-- main.js + Script from MrWidow for new sliders  -->
+<script type="text/javascript" src="https://g2k7z4f8.ssl.hwcdn.net/defonic/js/script.js"></script>
+<!-- menu.js -->
+<script  src="defonic/menu/script.js"></script>
+
+<!-- Font awesome -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<!-- Share buttons by Cubecamp.ru  www.cubecamp.ru/articles/share/cubecamp.html -->
+<script type="text/javascript" src="https://g2k7z4f8.ssl.hwcdn.net/tim/js/share.js"></script>
+
+
+
+
+
+<!-- Changelog pop-up
+<script>
+  var HW_config = {
+    selector: ".updates",
+	trigger: ".fa-bell-o",
+    account: "7vGOAJ",
+	translations: {
+      labels: {
+        "new": "New",
+        "improvement": "Improvement",
+        "fix": "Release"
+    }
+  }
+};
+</script>
+<script async src="//cdn.headwayapp.co/widget.js"></script> -->
+
+
+<!-- start Gist JS code-->
+<script>    (function(d,h,w){var gist=w.gist=w.gist||[];gist.methods=['trackPageView','identify','track','setAppId'];gist.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);gist.push(e);return gist;}};for(var i=0;i<gist.methods.length;i++){var c=gist.methods[i];gist[c]=gist.factory(c)}s=d.createElement('script'),s.src="https://widget.getgist.com",s.async=!0,e=d.getElementsByTagName(h)[0],e.appendChild(s),s.addEventListener('load',function(e){},!1),gist.setAppId("xnm3ys9d"),gist.trackPageView()})(document,'head',window);</script><!-- end Gist JS code-->
+
+<!-- pop up code -->
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-bcf1cd77-b210-4d9f-9352-627d4652fadd"></div>
+
+<!-- Loop -->
+<!-- <script>!function(a,b,c,d,t){var e,f=a.getElementsByTagName("head")[0];if(!a.getElementById(c)){if(e=a.createElement(b),e.id=c,e.setAttribute("data-vrlps-ucid",d),e.setAttribute("data-vrlps-version","2"), e.setAttribute("data-vrlps-template", t),e.src="https://app.viral-loops.com/popup_assets/js/vl_load_v2.min.js",window.ub){jQuery=null,$=null;var g=a.createElement(b);g.src="",f.appendChild(g)}f.appendChild(e);var h=a.createElement("link");h.rel="stylesheet",h.type="text/css",h.href="https://app.viral-loops.com/static/vl-loader.css",f.appendChild(h);var i=a.createElement("div");i.id="vl-overlay",i.style.display="none";var j=a.createElement("div");j.id="vl-loader",i.appendChild(j),a.addEventListener("DOMContentLoaded",function(b){a.body.appendChild(i);for(var c=a.getElementsByClassName("vrlps-trigger"),d=0;d<c.length;d++)c[d].removeAttribute("href"),c[d].onclick=function(){a.getElementById("vl-overlay").style.display="block"};var e=a.querySelectorAll("[data-vl-widget='popupTrigger']");[].forEach.call(e,function(b){var c=a.createElement("div");c.className="vl-embedded-cta-loader",b.appendChild(c)})})}}(document,"script","vrlps-js","Zc7TYzQAcD_cnYoiRAmgGYd3LXw","waitlist");
+</script> -->
+</body>
+</html>

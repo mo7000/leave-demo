@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+	
+<title>Asmrion Premium</title>
+<meta name="description" content="Noise generator with ambient sounds to boost your workday or relax.">
+<meta name="robots" content="index,follow">
+
+<!-- META Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Asmr">
+<meta property="og:description" content="Noise generator with ambient sounds to boost your workday">
+<meta property="og:site_name" content="Hipstersound">
+
+<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-96x96.png" sizes="96x96" type="image/png">
+<link rel="icon" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/favicon-192x192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" sizes="57x57" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://g2k7z4f8.ssl.hwcdn.net/img/fav/apple-touch-icon-180x180.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600|VT323" rel="stylesheet"> 
+  <!-- CSS Files -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- reset.css(from stretchy) + now-ui-kit.css + simple-slider.css + switch.css + stretchy.css -->
+  <link href="https://defonic.com/tim/now-ui-kit.css" rel="stylesheet">
+  <link href="https://g2k7z4f8.ssl.hwcdn.net/tim/hint/hint.css" rel="stylesheet">
+  
+<!-- The toggle is created By Joseph Shenton @TeamiHackify -->
+<style>
+body {
+  background: #8F6286 url("https://g2k7z4f8.ssl.hwcdn.net/tim/img/forest.png") no-repeat center bottom fixed;
+  background-size: 100% auto;
+  -webkit-transition: background-color 150ms ease-out !important;
+  transition: background-color 150ms ease-out !important;
+}
+
+body.day-background {
+  background: #F4B878 url("https://g2k7z4f8.ssl.hwcdn.net/tim/img/forest.png") no-repeat center bottom fixed;
+  background-size: 100% auto;
+}
+
+.section {
+  padding: 50px 0 30px 0;
+
+}
+</style>
+
+<script src="https://g2k7z4f8.ssl.hwcdn.net/tim/js/modernizr.js"></script><!-- Modernizr -->
+
+<!-- jplayer -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.1/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jplayer@2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+	
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Aspen tree",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/aspen-tree160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_1",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_2").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Forest after rain",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/forest-at-dawn.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_2",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_3").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Paper",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/objects/paper.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_3",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_4").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Brushing",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/people/brushing-tapewriter160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_4",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_5").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Math-class",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/people/math-class160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_5",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_6").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Pebble beach",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/pebble-beach.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_6",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_7").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Rainy-walk",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/rainy-walk160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_7",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_8").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Snow",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/snow.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_8",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_9").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Walking through leaves",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/people/walking-leaves.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_9",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_10").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Bonfire",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/bonfire160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_10",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_11").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "typewriter",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/objects/typewriter160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_11",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_12").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "walking gravel",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/people/walking-gravel160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_12",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_13").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "keyboard",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/keyboard160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_13",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_14").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Whispering",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/people/whispering160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_14",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_15").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Ripping cloth",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/objects/ripping-cloth160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_15",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_16").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Bubble wrap",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/objects/bubble-wrap160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_16",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_17").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Rain hitting yurt roof",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/rain/rainhittingyurt160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_17",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_18").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Dressmaker",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/people/dressmaker160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_18",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_19").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "snowflakes-umbrella",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/snowflakes-umbrella160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_19",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_20").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Barbershop",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/people/barbershop160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_20",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	$("#jquery_jplayer_21").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Cat",
+				mp3: "https://e8b8e3q2.ssl.hwcdn.net/sounds/cat160.mp3"
+			});
+		},
+		solution: "html",
+		supplied: "mp3",
+		preload: "none",
+		cssSelectorAncestor: "#jp_container_21",
+		loop: true,
+		error: function(event) {
+            var time = event.jPlayer.status.currentTime;
+            $(this).jPlayer("play", time);
+            }
+	});
+
+	
+
+	
+	
+});
+//]]>
+</script>
+
+
+<!-- Analitics -->
+<script async defer data-domain="defonic.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+
+
+
+
+<body class="landing-page">
+<div id="jquery_jplayer_1" class="jp-jplayer jp-jplayer1"></div>
+<div id="jquery_jplayer_2" class="jp-jplayer jp-jplayer2"></div>
+<div id="jquery_jplayer_3" class="jp-jplayer jp-jplayer3"></div>
+<div id="jquery_jplayer_4" class="jp-jplayer jp-jplayer4"></div>
+<div id="jquery_jplayer_5" class="jp-jplayer jp-jplayer5"></div>
+<div id="jquery_jplayer_6" class="jp-jplayer jp-jplayer6"></div>
+<div id="jquery_jplayer_7" class="jp-jplayer jp-jplayer7"></div>
+<div id="jquery_jplayer_8" class="jp-jplayer jp-jplayer8"></div>
+<div id="jquery_jplayer_9" class="jp-jplayer jp-jplayer9"></div>
+<div id="jquery_jplayer_10" class="jp-jplayer jp-jplayer10"></div>
+<div id="jquery_jplayer_11" class="jp-jplayer jp-jplayer11"></div>
+<div id="jquery_jplayer_12" class="jp-jplayer jp-jplayer12"></div>
+<div id="jquery_jplayer_13" class="jp-jplayer jp-jplayer13"></div>
+<div id="jquery_jplayer_14" class="jp-jplayer jp-jplayer14"></div>
+<div id="jquery_jplayer_15" class="jp-jplayer jp-jplayer15"></div>
+<div id="jquery_jplayer_16" class="jp-jplayer jp-jplayer16"></div>
+<div id="jquery_jplayer_17" class="jp-jplayer jp-jplayer17"></div>
+<div id="jquery_jplayer_18" class="jp-jplayer jp-jplayer18"></div>
+<div id="jquery_jplayer_19" class="jp-jplayer jp-jplayer19"></div>
+<div id="jquery_jplayer_20" class="jp-jplayer jp-jplayer20"></div>
+<div id="jquery_jplayer_21" class="jp-jplayer jp-jplayer21"></div>
+
+<!-- This toggle is created By Joseph Shenton @TeamiHackify -->
+<div class="button-conf">
+  <label for='cb1'>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+      <g id="Sun">
+        <g>
+          <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </g>
+      </g>
+    </svg>
+  </label>
+  <input class='toggle' id='cb1' type='checkbox'>
+  <label class='toggle-button' for='cb1'></label>
+  <label for='cb1'>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+      <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+    </svg>
+  </label>
+</div>
+
+
+
+
+		    <div class="countdown">
+				<div id="titr1"><span data-seconds="3600" class="kkcountdown1"></span></div>
+			    <div id="titr2"><span data-seconds="1800" class="kkcountdown2"></span></div>
+            </div> 
+		
+		<!-- Stretchy navigation -->
+		<nav class="cd-stretchy-nav edit-content">
+			<a class="cd-nav-trigger" href="#0">
+				<span aria-hidden="true"></span>
+			</a>
+			<ul>
+				<li><a href="javascript:;" id="stop_all"><span>mute&nbsp;in&nbsp;1&nbsp;hour</span></a></li>				
+				<li><a href="javascript:;" id="stop_all2"><span>mute&nbsp;in&nbsp;30&nbsp;min.</span></a></li>
+				<li><a href="javascript:;" id="stoperbis"><span>mute&nbsp;now</span></a></li>
+			</ul>
+			<span aria-hidden="true" class="stretchy-nav-bg"></span>
+		</nav>
+
+
+
+<div class="wrapper">
+	
+    <div class="section section-team text-center">
+      <div class="container">
+		<img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/logoprem.png" class="thelogo" alt="">
+		<p style="font-size: 18px; color: #ffffff; margin: 30px 0 95px 0;">Generator of positive sounds<br>Create a tranquil environment for pleasant relaxation</p>
+	
+		
+          <div class="row">
+
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_17" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Rain hitting the yurt roof" id="shower17"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/yu.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Rain hitting the yurt roof" id="hider17"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/yu.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume17"><input id="my-input17" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+					
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_19" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Snowflakes falling on umbrella" id="shower19"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/umbr.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Snowflakes falling on umbrella" id="hider19"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/umbr.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume19"><input id="my-input19" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>				
+			
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_6" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Pebble beach" id="shower6"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/beach.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Pebble beach" id="hider6"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/beach.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume6"><input id="my-input6" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+			
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_1" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Leaves rustling in the wind" id="shower1"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/leaf.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Leaves rustling in the wind" id="hider1"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/leaf.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume1"><input id="my-input1" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+			
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_2" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Forest at dawn after the rain" id="shower2"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/forest.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Forest at dawn after the rain" id="hider2"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/forest.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume2"><input id="my-input2" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+					
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_20" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Barbershop haircut" id="shower20"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/barber.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Barbershop haircut" id="hider20"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/barber.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume20"><input id="my-input20" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>	
+			
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_3" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Ripping a paper" id="shower3"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/paper.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Ripping a paper" id="hider3"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/paper.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume3"><input id="my-input3" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+						
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_4" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Scratching" id="shower4"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/whisper.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Scratching" id="hider4"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/whisper.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume4"><input id="my-input4" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_16" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Bubble wrap" id="shower16"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/bubble.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Bubble wrap" id="hider16"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/bubble.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume16"><input id="my-input16" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+			
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_9" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Walk on a carpet of leaves" id="shower9"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/carpet.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Walk on a carpet of leaves" id="hider9"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/carpet.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume9"><input id="my-input9" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>		
+			
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_8" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Heavy snowstorm" id="shower8"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/snow.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Heavy snowstorm" id="hider8"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/snow.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume8"><input id="my-input8" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_7" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Walking on a rainy day" id="shower7"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/rain.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Walking on a rainy day" id="hider7"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/rain.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume7"><input id="my-input7" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+			
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_14" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Mysterious murmur" id="shower14"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/whisper2.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Mysterious murmur" id="hider14"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/whisper2.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume14"><input id="my-input14" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+		
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_12" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Walking on a gravel beach" id="shower12"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/gravel.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Walking on a gravel beach" id="hider12"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/gravel.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume12"><input id="my-input12" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>			
+
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_21" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Cat’s purr" id="shower21"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/cat.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Cat’s purr" id="hider21"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/cat.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume21"><input id="my-input21" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>				
+
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_13" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Keyboard" id="shower13"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/key.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Keyboard" id="hider13"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/key.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume13"><input id="my-input13" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_5" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Classroom" id="shower5"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/class.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Classroom" id="hider5"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/class.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume5"><input id="my-input5" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_10" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Crackling bonfire" id="shower10"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/fire.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Crackling bonfire" id="hider10"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/fire.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume10"><input id="my-input10" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>				
+						
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_11" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Typewriter" id="shower11"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/type.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Typewriter" id="hider11"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/type.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume11"><input id="my-input11" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+			
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_15" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Ripping cloth" id="shower15"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/cloth.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Ripping cloth" id="hider15"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/cloth.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume15"><input id="my-input15" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+						
+            <div class="col-6 col-sm-6 col-md-4">                 
+                <div id="jp_container_18" class="team-player">		
+	                <a href="javascript:;" class="jp-play hint--top" aria-label="Dressmaker" id="shower18"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/dress.png" alt="" class="img1"></a>
+					<a href="javascript:;" class="jp-pause hint--top hint--always" aria-label="Dressmaker" id="hider18"><img src="https://g2k7z4f8.ssl.hwcdn.net/tim/img/asmrion/dress.png" alt="" class="img2"></a>
+					<div class="marginal" id="slvolume18"><input id="my-input18" type="text" data-slider="true" value="0.8" data-slider-highlight="true"></div>
+               </div>				
+            </div>
+			
+          </div>
+		  
+
+		
+      </div>
+
+	  <div>
+		<a href="raining.html" class="cta">
+			<span>raining</span>
+			<svg width="13px" height="10px" viewBox="0 0 13 10">
+				<path d="M1,5 L11,5"></path>
+				<polyline points="9 1 12 5 8 9"></polyline>
+			</svg>
+		</a>
+		<a href="index.html" class="cta">
+			<span>index</span>
+			<svg width="13px" height="10px" viewBox="0 0 13 10">
+				<path d="M1,5 L11,5"></path>
+				<polyline points="8 1 12 5 8 9"></polyline>
+			</svg>
+		</a>
+	  </div>
+	  
+	  
+    </div>
+
+<p style="margin-bottom: 200px;"> </p>
+
+	
+			
+</div>
+
+
+<script>
+$( "#hider1" ).click(function() {
+  $( "#slvolume1" ).css( "visibility", "hidden" );
+});
+$( "#shower1" ).click(function() {
+  $( "#slvolume1" ).css( "visibility", "visible" );
+});
+$( "#hider2" ).click(function() {
+  $( "#slvolume2" ).css( "visibility", "hidden" );
+});
+$( "#shower2" ).click(function() {
+  $( "#slvolume2" ).css( "visibility", "visible" );
+});
+$( "#hider3" ).click(function() {
+  $( "#slvolume3" ).css( "visibility", "hidden" );
+});
+$( "#shower3" ).click(function() {
+  $( "#slvolume3" ).css( "visibility", "visible" );
+});
+$( "#hider4" ).click(function() {
+  $( "#slvolume4" ).css( "visibility", "hidden" );
+});
+$( "#shower4" ).click(function() {
+  $( "#slvolume4" ).css( "visibility", "visible" );
+});
+$( "#hider5" ).click(function() {
+  $( "#slvolume5" ).css( "visibility", "hidden" );
+});
+$( "#shower5" ).click(function() {
+  $( "#slvolume5" ).css( "visibility", "visible" );
+});
+$( "#hider6" ).click(function() {
+  $( "#slvolume6" ).css( "visibility", "hidden" );
+});
+$( "#shower6" ).click(function() {
+  $( "#slvolume6" ).css( "visibility", "visible" );
+});
+$( "#hider7" ).click(function() {
+  $( "#slvolume7" ).css( "visibility", "hidden" );
+});
+$( "#shower7" ).click(function() {
+  $( "#slvolume7" ).css( "visibility", "visible" );
+});
+$( "#hider8" ).click(function() {
+  $( "#slvolume8" ).css( "visibility", "hidden" );
+});
+$( "#shower8" ).click(function() {
+  $( "#slvolume8" ).css( "visibility", "visible" );
+});
+$( "#hider9" ).click(function() {
+  $( "#slvolume9" ).css( "visibility", "hidden" );
+});
+$( "#shower9" ).click(function() {
+  $( "#slvolume9" ).css( "visibility", "visible" );
+});
+$( "#hider10" ).click(function() {
+  $( "#slvolume10" ).css( "visibility", "hidden" );
+});
+$( "#shower10" ).click(function() {
+  $( "#slvolume10" ).css( "visibility", "visible" );
+});
+$( "#hider11" ).click(function() {
+  $( "#slvolume11" ).css( "visibility", "hidden" );
+});
+$( "#shower11" ).click(function() {
+  $( "#slvolume11" ).css( "visibility", "visible" );
+});
+$( "#hider12" ).click(function() {
+  $( "#slvolume12" ).css( "visibility", "hidden" );
+});
+$( "#shower12" ).click(function() {
+  $( "#slvolume12" ).css( "visibility", "visible" );
+});
+$( "#hider13" ).click(function() {
+  $( "#slvolume13" ).css( "visibility", "hidden" );
+});
+$( "#shower13" ).click(function() {
+  $( "#slvolume13" ).css( "visibility", "visible" );
+});
+$( "#hider14" ).click(function() {
+  $( "#slvolume14" ).css( "visibility", "hidden" );
+});
+$( "#shower14" ).click(function() {
+  $( "#slvolume14" ).css( "visibility", "visible" );
+});
+$( "#hider15" ).click(function() {
+  $( "#slvolume15" ).css( "visibility", "hidden" );
+});
+$( "#shower15" ).click(function() {
+  $( "#slvolume15" ).css( "visibility", "visible" );
+});
+$( "#hider16" ).click(function() {
+  $( "#slvolume16" ).css( "visibility", "hidden" );
+});
+$( "#shower16" ).click(function() {
+  $( "#slvolume16" ).css( "visibility", "visible" );
+});
+$( "#hider17" ).click(function() {
+  $( "#slvolume17" ).css( "visibility", "hidden" );
+});
+$( "#shower17" ).click(function() {
+  $( "#slvolume17" ).css( "visibility", "visible" );
+});
+$( "#hider18" ).click(function() {
+  $( "#slvolume18" ).css( "visibility", "hidden" );
+});
+$( "#shower18" ).click(function() {
+  $( "#slvolume18" ).css( "visibility", "visible" );
+});
+$( "#hider19" ).click(function() {
+  $( "#slvolume19" ).css( "visibility", "hidden" );
+});
+$( "#shower19" ).click(function() {
+  $( "#slvolume19" ).css( "visibility", "visible" );
+});
+$( "#hider20" ).click(function() {
+  $( "#slvolume20" ).css( "visibility", "hidden" );
+});
+$( "#shower20" ).click(function() {
+  $( "#slvolume20" ).css( "visibility", "visible" );
+});
+$( "#hider21" ).click(function() {
+  $( "#slvolume21" ).css( "visibility", "hidden" );
+});
+$( "#shower21" ).click(function() {
+  $( "#slvolume21" ).css( "visibility", "visible" );
+});
+</script>
+
+<!-- This toggle is created By Joseph Shenton @TeamiHackify -->
+<script type="text/javascript">
+$('body').toggleClass('day-background');
+
+$('#cb1').on('click', function () { $('body').toggleClass('day-background'); });
+</script>
+
+
+
+
+  
+  <!--   Core JS Files   -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.5/dist/umd/popper.min.js" type="text/javascript"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="https://g2k7z4f8.ssl.hwcdn.net/tim/slider/simple-slider.js"></script>
+  
+  <script src="https://g2k7z4f8.ssl.hwcdn.net/tim/js/kkcountdown.js" type="text/javascript"></script>
+  <!-- stretchy.js + mute code -->
+  <script src="https://g2k7z4f8.ssl.hwcdn.net/tim/js/stretchy.js" type="text/javascript"></script>
+
+  <!-- now-ui-kit.js + code for new volumes -->
+  <script src="https://g2k7z4f8.ssl.hwcdn.net/tim/js/now-ui-kit.js" type="text/javascript"></script>
+
+
+<!-- start Gist JS code--><script>    (function(d,h,w){var gist=w.gist=w.gist||[];gist.methods=['trackPageView','identify','track','setAppId'];gist.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);gist.push(e);return gist;}};for(var i=0;i<gist.methods.length;i++){var c=gist.methods[i];gist[c]=gist.factory(c)}s=d.createElement('script'),s.src="https://widget.getgist.com",s.async=!0,e=d.getElementsByTagName(h)[0],e.appendChild(s),s.addEventListener('load',function(e){},!1),gist.setAppId("xnm3ys9d"),gist.trackPageView()})(document,'head',window);</script><!-- end Gist JS code-->
+
+</body>
+</html>
